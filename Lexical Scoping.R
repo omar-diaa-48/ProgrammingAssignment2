@@ -1,3 +1,4 @@
+## function makeCasheMatrix to make a matrix object with some function inside
 makeCasheMatrix <- function(x = matrix())
 {
     inv <- NULL
@@ -11,6 +12,7 @@ makeCasheMatrix <- function(x = matrix())
     getInverse <- function(){inv}
     list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
+## function casheSolve to get inverse of matrix if stored or calculate if null
 casheSolve <- function(x, ...)
 {
     inv <- x$getInverse()
